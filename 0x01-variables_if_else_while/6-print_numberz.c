@@ -1,7 +1,7 @@
 #include<stdio.h>
 /**
   * main - Entry point
-  * description - display numbers
+  * description - display numbers v2.0
   * Return: Always 0 (success)
   */
 int main(void)

@@ -1,17 +1,21 @@
 #include <stdio.h>
 /**
   * main - entry point
-  * description - alphabet in reverse
+  * description - base 16 hexadecimal but in lowercase
   * Return: Always 0 (success)
   */
 int main(void)
 {
-	int n = 122;
+	int n;
+	int a;
 
-	while (n >= 97)
+	for (n = 48; n <= 57; n++)
 	{
 		putchar(n);
-		n--;
+	}
+	for (a = 97; a <= 102; a++)
+	{
+		putchar(a);
 	}
 	putchar('\n');
 	return (0);
