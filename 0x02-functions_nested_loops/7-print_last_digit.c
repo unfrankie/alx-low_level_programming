@@ -6,10 +6,10 @@
   * return: always 0 (success)
   */
 
-print_last_digit(int n)
+int print_last_digit(int n)
 {
 	int i = 10 % n;
 
 	return (i);
-	putchar('\n');
+	_putchar('\n');
 }
