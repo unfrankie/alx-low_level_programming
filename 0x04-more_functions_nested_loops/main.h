@@ -1,6 +1,7 @@
 #ifndef MAIN_HEADER_FILE
 #define MAIN_HEADER_FILE
 
+void print_number(int n);
 int _putchar(char c);
 int _isupper(int c);
 int _isdigit(int c);
