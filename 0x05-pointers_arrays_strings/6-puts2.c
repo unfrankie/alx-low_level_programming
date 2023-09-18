@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * puts2 - display every other character of a string starting with the 1st character
+ * puts2 - display every other character of a string starting
+ * with the 1st character
  * @str: string to display the characters from
  */
 
