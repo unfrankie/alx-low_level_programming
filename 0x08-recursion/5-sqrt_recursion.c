@@ -1,4 +1,4 @@
-include <stdio.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -13,7 +13,7 @@ int _sqrt_recursion(int n)
 
 	if (n < 0)
 		return (-1);
-	for (i = 0; ;i++)
+	for (i = 0;; i++)
 	{
 		if (i * i <= n && n < (i + 1) * (i + 1))
 			return (i);
