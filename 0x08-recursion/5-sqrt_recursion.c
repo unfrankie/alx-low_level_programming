@@ -7,7 +7,7 @@
   * return: if number is negative return -1
   */
 
-int _sqrt_recursion(int n);
+int _sqrt_recursion(int n)
 {
 	int i;
 
