@@ -1,7 +1,7 @@
 #ifndef MAIN_HEADER_FILE
 #define MAIN_HEADER_FILE
 
-int 0_sqrt_recursion(int n, int i);
+//int 0_sqrt_recursion(int n, int i);
 int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
 int _putchar(char c);
