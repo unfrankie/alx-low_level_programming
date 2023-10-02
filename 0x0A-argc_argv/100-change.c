@@ -63,7 +63,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	n = atoi(argv[1]);
+	n = _atoi(argv[1]);
 	result = 0;
 	if (n < 0)
 	{
