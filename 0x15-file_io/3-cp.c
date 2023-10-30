@@ -13,7 +13,7 @@ char *filesize(char *filename)
 	c = malloc(sizeof(char) * 1024);
 	if (c == NULL)
 	{
-		dprintf(STDERR_FILENO,"Error: Can't write to %s\n", filename);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
 		exit(99);
 	}
 	return (c);
@@ -57,8 +57,7 @@ int main(int argc, char *argv[])
 	src = open(argv[1], O_RDONLY);
 	r = read(src, c, 1024);
 	dest = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	do
-	{
+	do {
 		if (src == -1 || r == -1)
 		{
 			dprintf(STDERR_FILENO,
@@ -76,8 +75,7 @@ int main(int argc, char *argv[])
 		}
 		r = read(src, c, 1024);
 		dest = open(argv[2], O_WRONLY | O_APPEND);
-	}
-	while (r > 0);
+	} while (r > 0);
 	free(c);
 	closefile(src);
 	closefile(dest);
