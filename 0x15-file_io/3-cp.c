@@ -1,13 +1,49 @@
 #include "main.h"
 
 /**
-  * cp_file - copie the content of a file to another file
+  * filesize - pick 1024 bytes from file
+  * @filename: name of the file
+  * Return: c
+  */
+
+char *filesize(char *filename)
+{
+	char *c;
+
+	c = malloc(sizeof(char) * 1024);
+	if (c == NULL)
+	{
+		dprintf(STDERR_FILENO,"Error: Can't write to %s\n", filename);
+		exit(99);
+	}
+	return (c);
+}
+
+/**
+  * closefile - close file
+  * @fd_value: file descriptor value
+  */
+
+void closefile(int fd_value)
+{
+	int i;
+
+	i = close(fd_value);
+	if (i == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_value);
+		exit(100);
+	}
+}
+
+/**
+  * main - copie the content of a file to another file
   * @argc: number of argument
   * @argv: argument pointer
   * Return: 0
   */
 
-int cp_file(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int src, dest, r, w;
 	char *c;
