@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
-  * read_textfile - reads a text file and prints it to the POSIX standard output
+  * read_textfile - read a text file and prints it to the POSIX standard output
   * @filename: pointer filename
   * @letters: is the number of letters it should read and print
   * Return: the actual number of letters it can read & print
-  *		if the file cannot be open or read | filename is NULL 
+  *		if the file cannot be open or read | filename is NULL
   *		| write fail return 0
   */
 
