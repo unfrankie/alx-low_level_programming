@@ -20,8 +20,8 @@ hash_table_t *hash_table_create(unsigned long int size)
 		free(new_t);
 		return (NULL);
 	}
-
-	for (unsigned long int i = 0; i < size; i++)
+	unsigned long int i;
+	for ( i = 0; i < size; i++)
 		new_t->array[i] = NULL;
 
 	return (new_t);
