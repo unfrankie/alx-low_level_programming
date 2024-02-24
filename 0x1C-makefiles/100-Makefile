@@ -5,8 +5,6 @@ NAME = school
 
 all: m.h $(OBJ)
 	$(CC) $(SRC) -o $(NAME)
-$(OBJ): $(SRC) m.h
-	@$(CC) -c $(SRC)
 clean:
 	@$(RM) *~ $(NAME)
 oclean:
